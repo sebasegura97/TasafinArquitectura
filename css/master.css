@@ -1,0 +1,276 @@
+body{
+  margin: 0;
+}
+header{
+  height: 5vh;
+  width: 100vw;
+  padding: 2vh;
+  background-color: #3F51B5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-size: 14pt;
+}
+header a {
+  padding: 15px;
+  border-right: 1px solid white;
+}
+h1, h2, h3{
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+
+}
+h1{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40pt;
+  margin:0;
+}
+h3{
+  font-size: 30pt;
+  font-weight: 400;
+  text-align: center;
+}
+p{
+  font-family: 'Lora', serif;
+  font-size: 16pt;
+  color: white;
+  text-align: center;
+}
+.menu a:last-child{
+  border:none;
+}
+.portada{
+  display: flex;
+  height: 89vh;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-image: url('../images/portadaBg.png');
+  background-size: cover;
+
+}
+.logoBg{
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 30px;
+  position: absolute;
+  top: 15vh;
+  /*margin-bottom: 40px;*/
+  /*margin-bottom: 150px;*/
+}
+.logoBg img{
+  height: 20vh;
+}
+.button{
+  padding: 10px 40px 10px 40px;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: white;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, .5);
+  font-weight: 300;
+
+}
+.button:hover{
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0);
+
+}
+.botonera{
+  margin-top: 15px;
+}
+.naranja{
+  background-color: #FF9800;
+}
+.azul{
+  background-color: #3F51B5;
+  margin-right: 30px;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.subHeader{
+  height: 15vh;
+  background-color: #3F51B5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.content{
+  height: 85vh;
+  padding: 5vh 5vw 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.obras{
+  background-image: url('../images/obrasBg.png');
+  background-size: cover;
+}
+.serviciosObras{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 15px 0 30px 0;
+}
+.circleServicio{
+  height: 20vh;
+}
+.tasaciones{
+  background-image: url('../images/tasacionesBg.png');
+  background-size: cover;
+}
+.afines{
+  background-image: url('../images/afinesBg.png');
+  background-size: cover;
+}
+.contacto{
+  background: linear-gradient(to bottom, #ff9800 0%,#303f9f 100%);
+}
+
+/*FORMULARIO*/
+.formulario{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+.formulario input{
+  background-color: rgba(255,255,255,.2);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 10px 10px 50px;
+  margin-top: 8px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+
+}
+textarea{
+  background-color: rgba(255,255,255,.2);
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 10px;
+  margin-top: 8px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+
+
+}
+textarea::placeholder{
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+
+
+
+}
+.formulario input::placeholder{
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+}
+#telefono{
+  background-image: url(../images/phone.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+#empresa{
+  background-image: url(../images/empresa.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+#email{
+  background-image: url(../images/email.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+#inputEnviar{
+  width: 40%;
+  align-self: flex-end;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, .5);
+
+
+}
+
+#inputEnviar:hover{
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.mapa{
+  background-image: url(../images/mapaBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer{
+  height: 25vh;
+  width: 100vw;
+  background-color: #757575;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+}
+.logoFooter{
+  width: 30vw;
+}
+.gps{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.gps img{
+  height: 60px;
+  margin-right: 25px;
+}
+.gps p{
+  text-align: left;
+}
+.redes{
+  display: flex;
+  flex-direction: column;
+}
+.redes div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.redes img{
+  height: 40px;
+  margin-right: 25px;
+}
