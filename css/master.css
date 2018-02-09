@@ -1,43 +1,45 @@
 body{
   margin: 0;
+  /*width: 100vw;*/
 }
-header{
-  height: 5vh;
-  width: 100vw;
-  padding: 2vh;
+body header{
+  height: 10vh;
+  /*width: 100vw;*/
+  padding: 3vh;
   background-color: #3F51B5;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-a{
+body a{
   color: white;
   text-decoration: none;
   font-family: 'Lora', serif;
   font-size: 14pt;
 }
-header a {
+body header a {
   padding: 15px;
   border-right: 1px solid white;
 }
-h1, h2, h3{
+body h1, h2, h3{
   font-family: 'Ubuntu', sans-serif;
   color: white;
 
 }
-h1{
+body h1{
   font-weight: 700;
   text-transform: uppercase;
   font-size: 40pt;
   margin:0;
+  text-align: center;
 }
-h3{
+body h3{
   font-size: 30pt;
   font-weight: 400;
   text-align: center;
 }
-p{
+body p{
   font-family: 'Lora', serif;
   font-size: 16pt;
   color: white;
@@ -53,7 +55,7 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  /*width: 100vw;*/
   background-image: url('../images/portadaBg.png');
   background-size: cover;
 
@@ -94,7 +96,7 @@ p{
 }
 .container{
   height: 100vh;
-  width: 100vw;
+  /*width: 100vw;*/
   display: flex;
   flex-direction: column;
 }
@@ -113,6 +115,9 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.arquitecto h3{
+  color: black;
 }
 .obras{
   background-image: url('../images/obrasBg.png');
@@ -159,7 +164,7 @@ p{
   font-weight: 300;
 
 }
-textarea{
+body textarea{
   background-color: rgba(255,255,255,.2);
   border: 1px solid white;
   border-radius: 8px;
@@ -226,9 +231,9 @@ textarea::placeholder{
   background-size: cover;
   background-repeat: no-repeat;
 }
-footer{
+body footer{
   height: 25vh;
-  width: 100vw;
+  /*width: 100vw;*/
   background-color: #757575;
   display: flex;
   flex-direction: row;
@@ -273,4 +278,144 @@ footer{
 .redes img{
   height: 40px;
   margin-right: 25px;
+}
+.mySlides img{
+  height: 85vh;
+  width: auto;
+}
+#myMap{
+  width: 80%;
+  height: 80%;
+}
+/*MENU RESPONSIVE*/
+
+.menuResponsive{
+  display: flex;
+}
+.menuResponsiveContainer{
+  /*display: none;*/
+  position: fixed;
+  z-index: 4;
+  width: 102vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid red;*/
+  background-color: rgba(254, 142, 33, .7);
+  top: 0;
+  bottom: 0;
+  left: -102vw;
+  right: 0;
+  transition: .3s;
+}
+.menuOpen{
+  left: 0;
+}
+.menuResponsiveContainer a{
+  color: white;
+  text-decoration: none;
+  font-family: SolPro;
+  text-transform: uppercase;
+  font-size: 18pt;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px dashed white;
+  /*border-top: 1px dashed white;*/
+  width: 100%;
+  text-align: center;
+}
+.menuResponsiveContainer a:first-child{
+  border-top: 1px dashed white;
+
+}
+.buttonContainer{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(254, 142, 33, 1);
+}
+.menuResponsive img{
+  height: 60px;
+  z-index: 5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 20px;
+  background-color: rgba(254, 142, 33, 1);
+  padding: 10px;
+  border-radius: 50%;
+}
+.exitButton{
+  display: none;
+}
+.active{
+  display: block;
+}
+.menuResponsive{
+  display: none;
+}
+/*FIN MENU RESPONSIVE*/
+.gpsResponsive{display: none}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 790px){
+body header{
+  display: none;
+}
+body h1{
+  font-size: 28pt;
+}
+body h3{
+  font-size: 18pt;
+}
+body p{
+  font-size: 13pt;
+}
+body footer{
+  height: 65vh;
+}
+.mySlides img{
+  width: 100%;
+  height: auto;
+}
+.portada{
+  height: 100vh;
+}
+.menuResponsive{
+  display: flex;
+}
+.circleServicio{
+  height: 15vh;
+}
+.plusIcon{
+  display: none;
+}
+.serviciosObras{
+  width: 100%;
+}
+.footer{
+  flex-wrap: wrap;
+}
+.logoFooter{
+  width: 80%;
+  margin: 25px 0 25px 0;
+}
+.gps{
+  display: none;
+}
+.redes{
+  width: 80%;
+}
+.gpsResponsive{
+  display: flex;
+}
+.arquitectura{
+  height: 200vh;
+}
+.arquitecto{
+  height: 185vh;
+}
 }

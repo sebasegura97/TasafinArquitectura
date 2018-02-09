@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link href="images/browserLogo.png" rel="icon" type="image/x-icon" />
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
 
@@ -21,8 +21,24 @@
           <a href="#galeria">Galeria</a>
           <a href="#contacto">Contacto</a>
         </div>
-      </header>
 
+      </header>
+      <div class="menuResponsive">
+      <div class="buttonContainer">
+        <img src="images/icons/burgerMenu.svg" onclick="changeButton()" id="burgerButton" class="burgerButton"></img>
+        <img src="images/icons/exit.svg" onclick="changeButton()" class="exitButton" id="exitButton"></img>
+      </div>
+
+      <div class="menuResponsiveContainer" onclick="changeButton()" id="menuResponsiveContainer">
+
+          <a href="#obras">OBRAS</a>
+          <a href="#tasaciones">TASACIONES</a>
+          <a href="#afines">AFINES</a>
+          <a href="#galeria">GALERIA</a>
+          <a href="#contacto">CONTACTO</a>
+
+      </div>
+    </div>
       <!-- PORTADA -->
       <div class="portada" id="portada">
         <div class="logoBg">
@@ -30,7 +46,37 @@
         </div>
         <div class="botonera">
           <a href="#galeria" class="button azul">Proyectos</a>
-          <a href="#galeria" class="button naranja">Contacto</a>
+          <a href="#contacto" class="button naranja">Contacto</a>
+        </div>
+      </div>
+
+      <!-- ARQUITECTO -->
+
+      <div class="container arquitectura">
+        <div class="subHeader">
+          <h1>Arquitecto Carlos Varela</h1>
+        </div>
+        <div class="content arquitecto">
+          <h3>Servicios profesionales</h3>
+          <ul>
+            <li>Diseño Arquitectónico y Urbano.</li> 
+            <li>Planificación, Dirección Técnica de Obras.</li>
+            <li>Ejecución y Tasación de Obras.</li>
+          </ul>
+          <h3>Formacion Tecnica</h3>
+          <ul>
+            <li>Titulo Universitario de Arquitecto expedido por la Facultad de Arquitectura, Urbanismo y Diseño de la  Universidad Nacional de Cordoba año 1996.</li> 
+            <li>Curso de Ultimas tendencias en Software para la Industria de la Construccion. Universidad Catolica de Salta 1998.</li>
+            <li>Curso de “Fundamentos Básicos de la Norma ISO 9000”. Auditor TUV Rheinland. Salta 1999.</li>
+            <li>Curso de Normas Básicas de Tasaciones. Auditores Técnicos. Valuaciones, S.A. Bs.As. 1999.</li>
+            <li>Curso de Dirección Tecnica.Consejo Profesional de Ingenieros.Salta 1998.</li>
+            <li>Seminario de Planificacion Estrategica de Ciudades. Universidad Nacional Cordoba 1994</li>
+            <li>Congreso Italo-Latinoamericano de Arquitectura “Idea de Ciudad”. Universidad Catolica Cordoba 1994.</li>
+            <li>Seminario “La Ciudad y el Automovil”. Fundacion Sol para la Vida Cordoba 1994.</li>
+            <li>Ciclo de Extension de Historia de la Arquitectura “Arquitectura y Ciudad” Universidad Nacional de Cordoba 1992</li>
+            <li>Primer Congreso Iberoamericano de Arquitectura Regional. Colegio de Arquitectura de Jujuy. 1990 </li>
+            <li>1°y2°año de Decoración de Interiores. En el Intituto Escuela Spilimbergo. Cordoba 1989-1990 </li>
+          </ul>
         </div>
       </div>
 
@@ -44,9 +90,9 @@
           <h3>Tasafin te ofrece un servicio completo y acorde a tus necesidades.</h3>
           <div class="serviciosObras">
             <img src="images/CircleProyecto.svg" class="circleServicio" alt="icono de proyectos">
-            <img src="images/plus.svg" alt="plus">
+            <img src="images/plus.svg" alt="plus" class="plusIcon" >
             <img src="images/CircleDireccion.svg" class="circleServicio" alt="icono de direccion">
-            <img src="images/plus.svg" alt="plus">
+            <img src="images/plus.svg" alt="plus" class="plusIcon">
             <img src="images/CircleEjecucion.svg" class="circleServicio" alt="icono de ejecucion de proyectos">
           </div>
           <p>Nos ocupamos de la formulacion de tu proyecto, la direccion y su ejecucion.</p>
@@ -83,6 +129,141 @@
         </div>
       </div>
 
+      <!-- GALERIA -->
+      <div class="subHeader">
+        <h1>GALERIA</h1>
+      </div>
+      <div class="w3-content w3-display-container">
+
+        <!-- COMERCIALES -->
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/comerciales/1.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Proyecto comercial
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/comerciales/2.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Proyecto comercial
+          </div>
+        </div>
+        <!-- EMPRENDIMIENTOS -->
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/emprendimientos/1.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Emprendimiento
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/emprendimientos/2.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Emprendimiento
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/emprendimientos/3.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Emprendimiento
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/emprendimientos/4.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Emprendimiento
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/emprendimientos/5.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Emprendimiento
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/emprendimientos/6.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Emprendimiento
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/emprendimientos/7.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Emprendimiento
+          </div>
+        </div>
+        <!-- VIVIENDAS -->
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/1.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/2.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/3.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/4.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/5.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/6.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/7.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/8.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/9.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/10.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="images/galeria/viviendas/11.jpg" >
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Vivienda
+          </div>
+        </div>
+
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+      </div>
+
       <!-- CONTACTO -->
 
       <div class="container" id="contacto">
@@ -107,7 +288,8 @@
           <h1>O visitanos!</h1>
         </div>
         <div class="content mapa">
-
+          <div class="contactoMapa" id="myMap">
+          </div>
         </div>
       </div>
 
@@ -115,16 +297,61 @@
         <div class="footer">
           <div class="gps">
             <img src="images/gps.svg" alt="icono de posicion">
-            <a href="" target="_blank">Los ciruelos 96 <br> Bº Tres Cerritos <br> Salta </a>
+            <a href="https://goo.gl/maps/KTpg3Rzaj2R2" target="_blank">Los ciruelos 96 <br> Bº Tres Cerritos <br> Salta </a>
           </div>
           <img src="images/logo.svg" alt="logo de tasafin" class="logoFooter">
           <div class="redes">
             <div> <img src="images/facebook.svg" alt="icono de facebook"> <a href="https://es-la.facebook.com/login/"  target="_blank">facebook.com/tasafin</a> </div>
             <div> <img src="images/wpp.svg" alt="icono de whatsapp"> <a href="https://api.whatsapp.com/send?phone=5493875147708" target="_blank">3875-147 708</a> </div>
-            <div> <img src="images/phoneFooter.svg" alt="icono de facebook"> <a href="tel:3874222222" target="_blank">387-4 222222 </a> </div>
+            <div> <img src="images/phoneFooter.svg" alt="icono de facebook"> <a href="tel:3874391165" target="_blank">387-4 391165 </a> </div>
+            <div class="gpsResponsive"><img src="images/gps.svg" alt="icono de posicion"> <a href="https://goo.gl/maps/KTpg3Rzaj2R2" target="_blank" >Los ciruelos 96 Bº Tres Cerritos Salta </a>  </div>
           </div>
         </div>
       </footer>
 
+      <script type="text/javascript">
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+      showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+      }
+
+      // MAPA
+      function initMap() {
+        var uluru = {lat: -24.776060, lng: -65.396059};
+        var map = new google.maps.Map(document.getElementById('myMap'), {
+          zoom: 19,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+      // MENU RESPONSIVE
+      var burgerButton = document.getElementById("burgerButton");
+      var exitButton = document.getElementById("exitButton");
+      var menuResponsiveContainer = document.getElementById("menuResponsiveContainer");
+      function changeButton(){
+        burgerButton.classList.toggle('active');
+        exitButton.classList.toggle('active');
+        menuResponsiveContainer.classList.toggle('menuOpen');
+        // exitButton.style.display = "block";
+      };
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4mByYvLqlMn45aCAxFEdlKCzvJMLTC1c&callback=initMap">
+      </script>
   </body>
 </html>
