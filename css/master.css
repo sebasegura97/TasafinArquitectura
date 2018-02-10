@@ -268,7 +268,7 @@ body footer{
   display: flex;
   flex-direction: column;
 }
-.redes div{
+.redesDiv{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -287,6 +287,16 @@ body footer{
   width: 80%;
   height: 80%;
 }
+
+/* GALERIA */
+
+body .w3-content{
+  display: flex;
+  max-width: 1024px;
+  align-items: center;
+  justify-content: center;
+}
+
 /*MENU RESPONSIVE*/
 
 .menuResponsive{
@@ -360,6 +370,12 @@ body footer{
 /*FIN MENU RESPONSIVE*/
 .gpsResponsive{display: none}
 
+/* ARQUITECTO */
+.arquitectura{
+  height: 200vh;
+  display: none;
+}
+
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 790px){
 body header{
@@ -414,6 +430,7 @@ body footer{
 }
 .arquitectura{
   height: 200vh;
+  display: none;
 }
 .arquitecto{
   height: 185vh;
